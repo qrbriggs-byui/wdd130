@@ -1,0 +1,6 @@
+/**
+Using CSS I can change the background color in this external CSS file.
+**/
+body{
+    background-color: lightcoral;
+}
