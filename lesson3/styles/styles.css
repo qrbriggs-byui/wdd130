@@ -1,0 +1,21 @@
+.main-para {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+#active {
+  background-color: gray;
+  color: steelblue;
+}
+
+nav{
+  background-color: aliceblue;
+}
+
+.blue-text{
+  color: blue;
+}
+
+#foom{
+  background-color: coral;
+}
