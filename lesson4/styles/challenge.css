@@ -13,9 +13,10 @@ img{
 }
 
 ol{
-    width: 30rem;
+    width: 20rem;
     margin: 0 auto;
     color: black;
+    text-align: left;
 }
 
 h1:hover{
