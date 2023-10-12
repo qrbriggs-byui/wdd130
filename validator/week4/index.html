@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 Validator</title>
+</head>
+<body>
+    <h2>HTML</h2>
+    <p><textarea cols="120" rows="10" id="validate-html"></textarea></p>
+    <h2>CSS</h2>
+    <p><textarea cols="120" rows="10" id="validate-css"></textarea></p>
+    <button onclick="validateCSS()" style="font-size: 2rem;background-color: pink;padding: 1rem;">VALIDATE ME!</button>
+    <h2>Results</h2>
+    <p><textarea cols="120" rows="10" id="result-box"></textarea></p>
+</body>
+<script>
+    function validateCSS(){
+        let text = document.querySelector("#validate-css").value
+        const results = document.querySelector("#result-box")
+        text = text.replaceAll(" ","").replaceAll("\t","").replaceAll("\n","")        
+        const rules = text.split("}")        
+        let contentrule = rules.filter((x)=>{return x.includes("#content")}).filter((x)=>{return x.includes("width:1600px")});        
+        results.value += "Content Rule:" + (contentrule.length==1)
+
+        let centered = rules.filter((x)=>{return x.includes("text-align:center")});        
+        results.value += "Centered Rules:" + centered;
+
+    }
+</script>
+</html>
