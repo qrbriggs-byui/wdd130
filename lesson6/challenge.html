@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <style>
+        #grid-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 500px;
+            margin: 0 auto;
+        }
+        h1{
+            font-size: 4rem;
+            grid-column: 1/3;
+            grid-row: 1/3;
+            text-align: center;
+            z-index: 1;
+        }
+        #cherry-image{
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+        #cherry-text{
+            grid-column: 2/3;
+            grid-row: 1/3;      
+            background-color: lightgrey;                  
+        }
+        h2{
+            text-align: center;
+            color: firebrick;
+            font-size: 2rem;            
+            grid-column: 2/3;
+            grid-row: 2/3;      
+            align-self: start;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid-container">
+        <h1>Tart & Sweet</h1>
+        <p id="cherry-image">
+            <img src="images/w06_cherries.png" alt="cherries" width="200">
+        </p>
+        <div id="cherry-text">                        
+        </div>
+        <h2>Cherries</h2>
+    </div>
+
+</body>
+</html>
