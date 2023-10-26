@@ -9,15 +9,18 @@
         display grid
         grid-template-columns: pixels (not responsive), 
         frational units (responsive)
-        grid-gap
-        nested grids
+        grid-gap/column-gap/row-gap
+        nested grids        
     -->
     <style>
         #grid-me{
             background-color: white;
             display: grid;
             grid-template-columns: 2fr 1fr 1fr;
-            grid-gap: 1rem; 
+            /* gap: 1rem;  */
+            column-gap: 1rem;
+            row-gap: 2rem;
+            border: 2px solid black;
         }
         .griditem{
             padding: .5em;
